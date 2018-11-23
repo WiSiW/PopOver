@@ -1,8 +1,9 @@
 /**
  * Created by wsw on 2018/11/22.
- * 调用PopOver.open(data,sureFn,canFn)
- * @param data包含
- *              insId,
+ * 调用PopOver.open(insId,data,sureFn,canFn)
+ * @param 
+ *          insId, // 插入的位置
+ *          {
  *              popStyle:{
  *                  mainWidth: int 弹出框宽度
  *                  mainHeight: int 弹出框高度
@@ -14,9 +15,10 @@
  *                  backColor: string 背景颜色 默认#000
  *              },
  *              header: string 页眉内容
- *              body: string 主体内容,
- *              sureFn = function (data) {}, // 点击确定触发的事件
- *              canFn = function (data) {} // 点击取消的事件
+ *              body: string 主体内容
+ *          },
+ *          sureFn = function (data) {}, // 点击确定触发的事件
+ *          canFn = function (data) {} // 点击取消的事件
  * @param sureFn 点击【确定方法】
  * @param canFn 点击取消方法
  */
